@@ -33,7 +33,6 @@ stage('Deploy') {
  steps {
  dir('shopping-cart-v2') {
  script {
- def status = sh(
  def TAG_TO_DEPLOY = "BUILD-$BUILD_NUMBER"
  if (params.DEPLOY_TAG != '' && params.DEPLOY_TAG != null) {
  def status = sh(
